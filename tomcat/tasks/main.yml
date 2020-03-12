@@ -1,2 +1,11 @@
 ---
-# tasks file for tomcat
+- include_tasks: java.yml
+- include_tasks:  usergroup.yml
+- include_tasks: tomcatinstall.yml
+- include_tasks: extract.yml
+- include_tasks: permission.yml
+- include_tasks: service.yml
+- include_tasks: reload.yml
+- include_tasks: manage.yml
+- include_tasks: serrestart.yml
+
